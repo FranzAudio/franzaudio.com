@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franz Ardito — Product Leader</title>
+  <meta name="description" content="Principal Product Manager at Babbel. Building AI-powered learning experiences. 10+ years shaping products people love.">
+  <meta property="og:title" content="Franz Ardito — Product Leader">
+  <meta property="og:description" content="Principal Product Manager at Babbel. Building AI-powered learning experiences.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://franzaudio.com">
+  <link rel="canonical" href="https://franzaudio.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --text-secondary: #5a5a5a;
+      --text-tertiary: #8a8a8a;
+      --bg: #fafaf8;
+      --bg-card: #ffffff;
+      --border: #e8e8e4;
+      --accent: #2a2a2a;
+      --accent-hover: #000000;
+      --link: #3d5a80;
+      --serif: 'Instrument Serif', Georgia, serif;
+      --sans: 'DM Sans', -apple-system, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(250, 250, 248, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-name {
+      font-family: var(--serif);
+      font-size: 20px;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-name img {
+      height: 28px;
+      width: auto;
+      display: block;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 160px 32px 100px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .hero-text { }
+
+    .hero-portrait {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 1px solid var(--border);
+      filter: grayscale(15%);
+      flex-shrink: 0;
+    }
+
+
+    .hero-eyebrow {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(42px, 6vw, 64px);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 32px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--text-secondary);
+    }
+
+    .hero-description {
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      max-width: 600px;
+      font-weight: 300;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 32px;
+    }
+
+    .section-label {
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 48px;
+      font-weight: 500;
+    }
+
+    .divider {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .divider hr {
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* PULL QUOTE */
+    .pull-quote {
+      font-family: var(--serif);
+      font-size: clamp(22px, 3vw, 30px);
+      font-style: italic;
+      color: var(--text-secondary);
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+      padding: 32px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 28px 0;
+      position: relative;
+    }
+
+    .pull-quote::before {
+      content: '\201C';
+      font-size: 72px;
+      line-height: 0;
+      position: absolute;
+      top: 44px;
+      left: -8px;
+      color: var(--border);
+      font-family: var(--serif);
+    }
+
+    /* ABOUT */
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--text-secondary);
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    .about-details {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .detail-item {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .detail-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .detail-label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .detail-value {
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    /* EXPERIENCE */
+    .experience-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .experience-item {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 48px;
+      padding: 40px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+
+    .experience-item:first-child { padding-top: 0; }
+    .experience-item:last-child { border-bottom: none; }
+
+    .exp-period {
+      font-size: 14px;
+      color: var(--text-tertiary);
+      font-weight: 300;
+      padding-top: 4px;
+    }
+
+    .exp-content h3 {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 4px;
+      letter-spacing: -0.01em;
+    }
+
+    .exp-company {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+
+    .exp-description {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .project-card:hover {
+      border-color: #ccc;
+      transform: translateY(-2px);
+    }
+
+    .project-tag {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .project-card h3 {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .project-card p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    /* CONTACT */
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .contact-text {
+      font-size: 18px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      transition: color 0.2s;
+    }
+
+    .contact-link:first-child { padding-top: 0; }
+
+    .contact-link:hover { color: var(--link); }
+
+    .contact-link-name {
+      font-size: 16px;
+    }
+
+    .contact-link-arrow {
+      font-size: 18px;
+      color: var(--text-tertiary);
+      transition: transform 0.2s, color 0.2s;
+    }
+
+    .contact-link:hover .contact-link-arrow {
+      transform: translateX(4px);
+      color: var(--link);
+    }
+
+    /* FOOTER */
+    footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: var(--text-tertiary);
+    }
+
+    /* ANIMATIONS */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .nav-inner { padding: 14px 20px; }
+      .nav-links { gap: 20px; }
+      .nav-links a { font-size: 13px; }
+      .hero { grid-template-columns: 1fr; padding: 130px 20px 72px; }
+      .hero-portrait { width: 120px; height: 120px; order: -1; }
+      .hero-description { font-size: 16px; }
+      section { padding: 60px 20px; }
+      .divider { padding: 0 20px; }
+
+      .about-content { grid-template-columns: 1fr; gap: 40px; }
+      .experience-item { grid-template-columns: 1fr; gap: 8px; }
+      .exp-period { padding-top: 0; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .contact-content { grid-template-columns: 1fr; gap: 40px; }
+
+      footer { padding: 32px 20px; flex-direction: column; gap: 8px; }
+    }
+
+    @media (max-width: 480px) {
+      .nav-links { gap: 14px; }
+      .hero h1 { font-size: 36px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-name"><img src="frzLogo1080.png" alt="Franz Ardito"></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow fade-in">Product Leader · Berlin</p>
+      <h1 class="fade-in">Building products that help people <em>connect</em></h1>
+      <p class="hero-description fade-in">
+        Principal Product Manager at Babbel with 10+ years of experience shaping AI-powered learning experiences. Passionate about language, empathy, and crafting products that make a difference.
+      </p>
+    </div>
+    <img src="FranzFace.png" alt="Franz Ardito" class="hero-portrait fade-in">
+  </header>
+
+  <div class="divider"><hr></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label fade-in">About</p>
+    <div class="about-content">
+      <div class="about-text fade-in">
+        <p>
+          I've spent over a decade at Babbel working at the intersection of product, technology, and language learning. I believe deeply in Babbel's mission: creating mutual understanding through language.
+        </p>
+        <p>
+          Language is more than vocabulary and grammar — it's connection, empathy, and a bridge between people and cultures. As a product leader, I focus on turning bold ideas into tangible experiences through lean methodologies, fast iteration, and a relentless focus on the learner.
+        </p>
+        <p>
+          When I speak Italian, I'm a bit of a different Franz than when I speak English, Spanish, or German. That personal relationship with language is what drives my work every day.
+        </p>
+        <p>
+          Before product, there was music. For years I worked as a guitarist, singer, composer, and producer — five years in Barcelona, then Berlin — collaborating with international artists, releasing records, and running live sound for festivals across Europe.
+        </p>
+        <blockquote class="pull-quote">Music is the second language everybody understands.</blockquote>
+        <p>
+          That conviction still shapes how I think about product: it's not about features, it's about what people feel. It's also where this domain got its name.
+        </p>
+      </div>
+      <div class="about-details fade-in">
+        <div class="detail-item">
+          <p class="detail-label">Current Role</p>
+          <p class="detail-value">Principal Product Manager, Babbel</p>
+        </div>
+        <div class="detail-item">
+          <p class="detail-label">Based In</p>
+          <p class="detail-value">Berlin, Germany</p>
+        </div>
+        <div class="detail-item">
+          <p class="detail-label">Languages</p>
+          <p class="detail-value">Italian, English, Spanish, German</p>
+        </div>
+        <div class="detail-item">
+          <p class="detail-label">Focus Areas</p>
+          <p class="detail-value">AI Products · Language Learning · Agile Innovation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><hr></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section-label fade-in">Experience</p>
+    <div class="experience-list">
+      <div class="experience-item fade-in">
+        <p class="exp-period">2022 — Present</p>
+        <div class="exp-content">
+          <h3>Principal Product Manager</h3>
+          <p class="exp-company">Babbel · Berlin</p>
+          <p class="exp-description">
+            Leading the development of AI-powered conversational learning experiences, including Babbel Speak. Heading "Team Asimov," a focused innovation unit building the future of language practice through lean methodologies, fast cycles, and constant testing.
+          </p>
+        </div>
+      </div>
+      <div class="experience-item fade-in">
+        <p class="exp-period">2015 — 2022</p>
+        <div class="exp-content">
+          <h3>Senior Product Manager</h3>
+          <p class="exp-company">Babbel · Berlin</p>
+          <p class="exp-description">
+            Drove product strategy and execution across multiple product areas. Oversaw the evolution of learning tools and contributed to shaping the product organization's agile practices and outcome-centric approach.
+          </p>
+        </div>
+      </div>
+      <div class="experience-item fade-in">
+        <p class="exp-period">2013 — 2015</p>
+        <div class="exp-content">
+          <h3>Product Manager</h3>
+          <p class="exp-company">Babbel · Berlin</p>
+          <p class="exp-description">
+            Joined the product team and helped shape the early product development processes. Contributed to building features that served millions of language learners worldwide.
+          </p>
+        </div>
+      </div>
+      <div class="experience-item fade-in">
+        <p class="exp-period">— 2013</p>
+        <div class="exp-content">
+          <h3>Musician & Sound Engineer</h3>
+          <p class="exp-company">Independent · New York & Berlin</p>
+          <p class="exp-description">
+            Guitarist, singer, composer, and record producer. Spent five years in Barcelona before moving to Berlin, collaborating with international artists including Asian Dub Foundation, Che Sudaka, Manu Chao, Modena City Ramblers, Dissidenten, and Gemelli DiVersi. Worked in parallel as a stage manager and FOH sound engineer for live festivals across Europe. This chapter — obsessing over craft, managing live experiences, and building things people feel — laid the foundation for everything that followed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><hr></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label fade-in">Projects</p>
+    <div class="projects-grid">
+      <div class="project-card fade-in">
+        <p class="project-tag">AI · Conversation</p>
+        <h3>Babbel Speak</h3>
+        <p>
+          An AI-powered conversational practice feature that gives learners a safe, private space to practice speaking a new language. Born from a 2019 hackathon idea, evolved through years of prototyping, and now live as a core tab in the Babbel app with 200+ curated scenarios.
+        </p>
+      </div>
+      <div class="project-card fade-in">
+        <p class="project-tag">Innovation · Process</p>
+        <h3>Team Asimov</h3>
+        <p>
+          Built and led a focused innovation unit named after Isaac Asimov. Operating with lean methodologies and strong agile principles: fast cycles, constant testing, and prioritizing working software over documentation.
+        </p>
+      </div>
+      <div class="project-card fade-in">
+        <p class="project-tag">Article · Origin Story</p>
+        <h3>From Hackathon to Home Screen</h3>
+        <p>
+          The full story of how Babbel Speak went from a 12-hour hackathon sprint in 2019 to a core feature used by millions of learners. Published on the Babbel Magazine — a behind-the-scenes look at the ideas, failures, and leaps of faith that made it real.
+        </p>
+        <a href="https://www.babbel.com/en/magazine/from-hackathon-to-home-screen-the-story-behind-babbel-speak" target="_blank" rel="noopener" style="display:inline-block; margin-top:20px; font-size:14px; color:var(--link); text-decoration:none; letter-spacing:0.01em;">Read the article →</a>
+      </div>
+      <div class="project-card fade-in">
+        <p class="project-tag">Product · Strategy</p>
+        <h3>Outcome-Centric Agile</h3>
+        <p>
+          Championing a shift toward outcome-centric agile processes across the product organization. Focused on helping teams move beyond feature delivery to measuring real impact on learner success.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><hr></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-label fade-in">Get in Touch</p>
+    <div class="contact-content">
+      <p class="contact-text fade-in">
+        I'm always happy to connect with fellow product people, language enthusiasts, or anyone curious about building AI-powered experiences. Feel free to reach out.
+      </p>
+      <div class="contact-links fade-in">
+        <a href="https://www.linkedin.com/in/franzaudio/" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-name">LinkedIn</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="https://www.babbel.com/en/magazine/from-hackathon-to-home-screen-the-story-behind-babbel-speak" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-name">Babbel Speak Story</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="mailto:franz@franzaudio.com" class="contact-link">
+          <span class="contact-link-name">Email</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>Franz Ardito</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Stagger hero animations
+    document.querySelectorAll('.hero .fade-in').forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.15}s`;
+    });
+  </script>
+
+</body>
+</html>
