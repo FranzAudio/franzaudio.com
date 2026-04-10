@@ -1,0 +1,234 @@
+# ConvoPro / Babbel Speak – Product Portfolio Summary
+
+## Overview
+
+ConvoPro (later rebranded as *Babbel Speak*) is an AI-powered conversational learning experience designed to help language learners practice speaking in a safe, adaptive, and engaging environment.
+
+It addresses a structural gap in language learning: users consume content but struggle to actively produce language, especially in speaking scenarios.
+
+---
+
+## Product Impact (Key Signals)
+
+The initiative has already demonstrated strong early traction and behavioral impact:
+
+- ~35% of users exposed to ConvoPro return to the feature within the first week  
+- AI Conversations drive significantly higher **speaking engagement** vs. scripted experiences  
+- Users produce **meaningfully more words per session** compared to legacy speaking formats  
+- Sessions combine speaking + listening, increasing **time spent per interaction**
+
+[Insert Amplitude graph: conversations per day since Jan 2025]  
+[Insert Amplitude graph: return-to-Speak D1–D7]
+
+---
+
+## Core Product Vision
+
+The long-term vision is to make **speaking the primary modality of learning**, shifting Babbel from:
+
+> “learning about a language” → “actively using a language”
+
+---
+
+## Key Product Concepts
+
+### 1. Speak Tab (Product Surface)
+
+A dedicated tab launched on iOS and Android to centralize all speaking experiences.
+
+Impact:
+- Increases discoverability of speaking features
+- Positions speaking as a core, not secondary, activity
+
+---
+
+### 2. Welcome Scenarios (Onboarding)
+
+Problem:
+Users hesitate to start speaking due to fear, lack of confidence, and cognitive overload.
+
+Solution:
+- Guided first conversation
+- L1 support at the start
+- Progressive transition into L2
+- Early personalization signals
+
+Expected impact:
+- Increase first-session completion rate  
+- Increase **words spoken in first session**  
+- Improve D1–D7 return to Speak  
+
+[Insert funnel: entry → first utterance → conversation completion]
+
+---
+
+### 3. AI Conversations (Core Loop)
+
+Core loop:
+1. Enter scenario  
+2. Speak with AI  
+3. Receive feedback  
+4. Continue interaction  
+
+Key performance insight:
+- While legacy Guided Conversations show higher **completion rates**,  
+  ConvoPro drives higher **active speaking output**, which is the stronger long-term retention driver.
+
+---
+
+### 4. Lesson → Speak Connection
+
+Experiment:
+Expose users to speaking immediately after completing a lesson.
+
+Hypothesis:
+- Reinforces learning through immediate usage  
+- Increases cross-feature engagement  
+
+Expected impact:
+- ↑ Return to Speak (D1–D7)  
+- ↑ Return to Learn (D1–D7)  
+
+[Insert Amplitude cohort: users exposed vs not exposed]
+
+---
+
+### 5. UX Harmonization
+
+Scope:
+- Replay audio  
+- Slow playback  
+- Translation  
+
+Impact:
+- Reduces friction for beginners  
+- Improves comprehension and control  
+- Increases session completion  
+
+Constraint:
+Different tech stacks → focus on **UX consistency, not backend unification**
+
+---
+
+### 6. Enriched Feedback (Upcoming)
+
+Goal:
+Move from binary feedback to actionable guidance.
+
+Planned features:
+- Missed word detection  
+- Inline corrections  
+- Error explanation  
+- Pronunciation feedback  
+
+Principle:
+- Deterministic systems where possible → reduce cost and increase reliability  
+
+---
+
+## Metrics Framework
+
+### North Star Metrics
+- Words spoken per session  
+- Time spent speaking per session  
+
+### Retention Metrics
+- Return to Speak (D1–D7) → target: >35%  
+- Return to Learn (D1–D7)  
+
+### Engagement Metrics
+- Conversations completed per user  
+- Sessions per week  
+- Speaking frequency  
+
+### Cost Awareness
+- AI conversations introduce **non-linear cost scaling (LLM + voice)**  
+- Requires balancing:
+  - Engagement uplift  
+  - Cost per session  
+
+[Insert cost vs engagement tradeoff chart]
+
+---
+
+## Key Learnings
+
+### Speaking Drives Retention
+Users who engage in speaking:
+- Return more frequently  
+- Build stronger habits  
+- Show higher long-term engagement  
+
+---
+
+### AI > Scripted (for Depth)
+- Scripted → better completion  
+- AI → deeper engagement  
+
+→ Strategic bet is on AI
+
+---
+
+### Beginner Friction is Critical
+Small UX improvements (e.g. slower audio, replay) have outsized impact on:
+- Completion  
+- Confidence  
+- Retention  
+
+---
+
+### Personalization Increases Stickiness
+Users respond strongly when the system:
+- Adapts to their level  
+- Reflects their interests  
+- Feels responsive  
+
+---
+
+## Strategic Direction
+
+### Short Term
+- Improve onboarding (Welcome Scenarios)  
+- Reduce beginner friction  
+- Increase session completion  
+
+---
+
+### Mid Term
+- Integrate into Seamless Learning Path (SLP)  
+- Expand feedback quality  
+- Strengthen lesson → speak loop  
+
+---
+
+### Long Term
+**Speak First paradigm**
+
+- Speaking becomes the primary entry point  
+- Lessons become supporting tools  
+
+---
+
+## Risks & Tradeoffs
+
+### Cost vs Engagement
+- AI conversations increase cost per session  
+- Requires clear ROI via retention and engagement  
+
+---
+
+### UX Complexity
+- Too much feedback → cognitive overload  
+- Too little feedback → low perceived value  
+
+---
+
+### Product Cannibalization
+- Risk of shifting usage away from lessons  
+- Requires careful orchestration across surfaces  
+
+---
+
+## Positioning Statement
+
+> ConvoPro transforms language learning from passive consumption into active communication by making speaking accessible, safe, and habitual from day one.
